@@ -1,0 +1,66 @@
+<header>
+	<div class="header_contents">
+		<h1 class="logo">
+			<a href="/">
+				<img src="/common/images/img_logo.png" alt="Logo">
+			</a>
+		</h1>
+		<div class="contact_sec only_pc">
+			<a href="/contact">
+				<p class="contact">お問い合わせ</p>
+			</a>
+			<a href="/">
+				<img src="/common/images/icon_mail.png" alt="Mail" class="mail">
+			</a>
+		</div>
+		<div class="menu_sp only_sp">
+			<p class="arimo">MENU</p>
+		</div>
+	</div>
+	<ul class="menu_list">
+		<li class="list_item"><a href="/business" class="underline01">事業領域</a></li>
+		<li class="list_item"><a href="/about" class="underline01">特徴・強み</a></li>
+		<li class="list_item"><a href="/dx" class="underline01">DX事業推進</a></li>
+		<li class="list_item sub01">
+			<div class="sub_menu">
+				<a href="/company" class="underline01">会社情報</a>
+				<span class="submenu_btn" id="subMenuBtn01"></span>
+			</div>
+			<ul class="sub_list">
+				<li class="sublist_item"><a href="/" class="underline02">会社情報トップ</a></li>
+				<li class="sublist_item"><a href="/company/philosophy" class="underline02">経営理念</a></li>
+				<li class="sublist_item"><a href="/company/profile" class="underline02">会社概要・組織図・沿革</a></li>
+				<li class="sublist_item"><a href="/company/access" class="underline02">拠点・アクセス</a></li>
+				<li class="sublist_item"><a href="/company/csr" class="underline02">CSR活動</a></li>
+			</ul>
+		</li>
+		<li class="list_item sub02">
+			<div class="sub_menu">
+				<a href="/recruit" class="underline01">採用情報</a>
+				<span class="submenu_btn" id="subMenuBtn02"></span>
+			</div>
+			<ul class="sub_list">
+				<li class="sublist_item"><a href="/recruit/interview" class="underline02">社員インタビュー</a></li>
+			</ul>
+		</li>
+		<li class="list_item"><a href="/news" class="underline01">ニュース</a></li>
+	</ul>
+</header>
+
+<script>
+	$("#subMenuBtn01").click(function(){
+		if ($(".list_item.sub01").hasClass('submenu_open')) {
+			$(".list_item.sub01").removeClass('submenu_open');
+		}else{
+			$(".list_item.sub01").addClass('submenu_open');
+		}
+	});
+
+	$("#subMenuBtn02").click(function(){
+		if ($(".list_item.sub02").hasClass('submenu_open')) {
+			$(".list_item.sub02").removeClass('submenu_open');
+		}else{
+			$(".list_item.sub02").addClass('submenu_open');
+		}
+	});
+</script>　

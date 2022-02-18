@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*For PC*/
+.arimo{
+	font-family: arimo,sans-serif;
+	font-weight: 400;
+}
+.poppins{
+	font-family: poppins,sans-serif;
+	font-weight: 400;
+}
+.underline01{
+	background-image: linear-gradient(#000,#000);
+	background-position: left 0 bottom 0;
+	background-repeat: no-repeat;
+	background-size: 0% 1px;
+}
+.underline01:hover{
+	transition: background-size .4s cubic-bezier(.19,1,.22,1);
+	background-size: 100% 1px;
+}
+.underline02{
+	background-image: linear-gradient(#7e7b7b,#7e7b7b);
+	background-position: left 0 bottom 0;
+	background-repeat: no-repeat;
+	background-size: 0% 1px;
+}
+.underline02:hover{
+	transition: background-size .4s cubic-bezier(.19,1,.22,1);
+	background-size: 100% 1px;
+}
+
+/*end of PC*/
+
+/*For Tablet*/
+@media only screen and (min-width: 981px) and (max-width: 1280px) {
+
+}
+/*end of Tablet*/
+
+/*For SP*/
+@media only screen and (max-width: 767px) {
+
+}
+/*end of SP*/
